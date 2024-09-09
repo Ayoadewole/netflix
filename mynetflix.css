@@ -1,0 +1,831 @@
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --white: #fff;
+    --red: rgb(229, 9, 20);
+    --black: rgb(0, 0, 0);
+    --media: rgba(20, 50, 250, 0.3);
+    --grey: rgba(228, 199, 199, 0.7);
+    --mintgreen: rgba(134, 255, 188, 0.8);
+}
+
+html {
+    color: var(--white);
+    font-family: sans-serif;
+    font-size: 60%;
+    word-spacing: -0.1rem; 
+    background-color: var(--black);
+    overflow-x: hidden;
+    margin: auto;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+}
+
+img {
+    opacity0: 0.3;
+    z-index: -1;
+}
+
+.logo-flex {  
+    margin: 12px auto 12px 30px;
+    display: flex;
+}
+
+svg {
+    width: 15.25rem;
+    color: var(--red);
+    fill: currentColor;
+    display: block;
+    overflow: hidden;
+    margin-right: 98rem;
+}
+
+.button1 {
+    margin-left: -17px;
+    padding: 8px 15px 3px 10px;
+    font-size: 1.5rem;
+    border-radius: 5px;
+    background-color: var(--red);
+    transition-duration: 0.2s;
+    border: 1px solid var(--red);
+    text-decoration: none; 
+}
+
+.header {
+    display: block;
+    position: relative;
+    background-size: cover;
+    background-repeat: no-repeat;
+    text-align: center;
+    background-position: 100%;
+    background-image0: url("https://assets.nflxext.com/ffe/siteui/vlv3/a56dc29b-a0ec-4f6f-85fb-50df0680f80f/240d36c3-e47c-4bb4-8124-944fdbc2a176/GB-en-20240617-popsignuptwoweeks-perspective_alpha_website_large.jpg");
+}
+
+.button1:hover, .button:hover {
+    background-color: hsl(4, 85%, 40%);
+}
+
+h1 {
+    font-size: 5.3rem;
+    font-weight: 900;
+    margin: 175px 60px 40px;
+}
+
+.header h1 {
+    margin-bottom: -8px;
+}
+
+p {
+    font-size: 2.7rem;
+}
+
+.middle {
+    font-size: 2.1rem;
+}
+
+.low {
+    font-size: 1.6rem;
+}
+
+.lower {
+    font-size: 1.4rem;
+}
+
+/*.topemail-flex, .lowemail-flex {
+    float0: left;
+    width0: 50%;
+}
+
+form0:after0 {
+    content: "";
+    display: table;
+    clear: both;
+} 
+
+
+  label {
+    flex: 50%;
+    padding: 20px;
+  } */
+
+label {
+    display: flex;
+    margin: auto 300px 60px;
+    float0: left;
+    width: 50%;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+#email {
+    padding: 18px 160px 18px 16px;
+    background-color: var(--black);
+    margin: auto 130px 0 9px;
+    border-radius: 5px;
+    border: 1.5px solid grey;
+    font-size: 15px;
+    color: var(--white);
+    opacity: 0.6;
+}
+
+.button {
+    padding: -1px 30px;
+    background-color: var(--red);
+    margin: -1px auto 0 -125px;
+    border-radius: 5px;
+    border: 1px solid var(--red); 
+    font-size: 2.5rem;
+    color: var(--white);
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+button span, a span {
+    margin-left: 15px;
+}
+
+.bar1 {
+    display: flex;
+    width: 100%;
+    height: 139px;
+    background-color: var(--red);
+    background: radial-gradient(51.39% 511.66% at 47.68% -217.91%, #ff9900 0%, #e50914 17.27%, #0e1b4f 79.44%, #000413 100%);
+    margin: -11px auto auto;
+}
+
+.bar2 {
+    width: 80%;
+    height: inherit;
+    background-color: var(--grey);
+    background: radial-gradient(51.39% 511.66% at 47.68% -217.91%, #ff9900 0%, #e50914 17.27%, #0e1b4f 79.44%, #000413 100%);
+    box-shadow: 0px -8px 25px rgba(0, 0, 0, 0.5);  
+    margin: 0 auto 10px auto;
+}
+
+#popcorn {
+    float: left;
+    margin: 63px -162px 45px 60px;
+}
+
+p img:after {
+    content: "";
+    display: table;
+    clear: both;
+} 
+
+.bar-flex {
+    width: 60%;
+    height: inherit;
+    background-color: var(--red);
+    background: linear-gradient(to right, hsla(0, 5%, 57%, 0.1) 0, #7c1dda00 60%, rgba(0, 0, 0, 0.1) 100%);
+    margin: -26px auto 10px auto;
+    line-height: 1.2rem;
+}
+
+.bar-flex .middle {
+    padding-top: 49px;
+    padding-left: 99px;
+    margin-top: -55px;
+}
+
+.bar-flex p.low {
+    margin-bottom: 6px;
+    padding-left: 43px;
+}
+
+.bar-flex a.low {
+    margin-bottom: 6px;
+    color: blue;
+    margin-left: -75px;
+}
+
+hr {
+    border: 5px solid grey;
+}
+
+.adultA {
+    margin-bottom: 220px;
+}
+
+#adult {
+    margin: -40px 170px 10px 23px;
+}
+
+#adult h1 {
+    margin-left: 0;
+    margin-right: auto;
+    margin-bottom: -11px;
+}
+
+#adult p {
+    margin: 31px 400px 11px 0;
+}
+
+.adultA img {
+    margin: -250px 19px 0 780px;
+    width: 400px;
+}
+
+.teenagerA img {
+    margin-top: 80px;
+    width: 570px;
+    margin-left: -18px;
+}
+
+#teenager {
+    margin-top: -260px;
+    margin-left: 550px;
+    margin-bottom: 205px;
+}
+
+#teenager h1 {
+    margin-bottom: -10px;
+}
+
+#teenager p {
+    margin-left: 65px;
+}
+
+.childrenA {
+    margin-bottom: 220px;
+}
+
+#children {
+    margin: -40px 170px 10px 23px;
+}
+
+#children h1 {
+    margin-left: 0;
+    margin-right: 339px;
+    margin-bottom: -11px;
+}
+
+#children p {
+    margin: 31px 400px 11px 0;
+}
+
+.childrenA img {
+    margin: -250px 2px 0 780px;
+    width: 400px;
+}
+
+.gameA img {
+    margin-top: 80px;
+    width: 450px;
+    margin-left: 30px;
+}
+
+#game {
+    margin-top: -400px;
+    margin-left: 500px;
+    margin-bottom: 205px;
+}
+
+#game h1 {
+    margin-bottom: -10px;
+}
+
+#game p {
+    margin-left: 65px;
+}
+/*.teenagerA {
+    margin: 60px 170px 10px 0;
+    width: 450px;
+}
+
+#teenagers {
+    margin: 50px 650px 0 0;
+    width: 400px;
+}
+
+#teenager {
+    margin: -300px 2px 0 400px;
+}
+
+#teenager h1 {
+    margin-left: 221px;
+    margin-top: 150px;
+}
+
+#teenager p {
+    margin: 31px 170px 11px 0;
+}
+
+.dropdown{
+    padding: 40px 80px;
+    background-color: var(--mintgreen);
+}
+
+.dropdown-content {
+    text-align: justify;
+} 
+*/
+
+.FAQ {
+    margin-top: -120px;
+}
+
+.FAQ h1{
+    text-align: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    font-size: 25px;
+    width: 96%;
+    margin: auto 2%;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin: auto 25px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.dropdown p {
+    margin: 0 12px 8px;
+    background-color: #3f3f3f;
+    opacity: 0.7;
+    height: 85px;
+    padding-top: 25px;
+    padding-left: 25px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.dropdown .material-icons {
+    margin-left: 990px;
+    margin-top: -49px;
+}
+
+.faq-mail .middle {
+    text-align: center;
+}
+
+footer {
+    height: 370px;
+    margin-left: 25px;
+    text-align: left;
+    opacity: 0.8;
+}
+
+.links {
+    margin: 70px auto;
+    font-size: 1.4rem;
+}
+ 
+a:link, a:hover, a:visited  {
+    color: var(--white);
+}
+
+.footer-flex {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: baseline;
+    align-content: space-around;
+    width: 100%;
+    height: 150px;
+    margin: 25px 0 10px;
+}
+
+.footer-flex > div {
+    text-align: left;
+    flex-basis: 25%;
+ }
+
+p i.material-icons {
+    font-size:60px;
+}
+
+#icons {
+    font-size:30px;
+}
+
+#lang {
+    margin: 22px 0;
+}
+
+::selection {
+    background: hsl(240, 58%, 52%);
+}
+/*
+@media screen and (max-width: 600px) {
+    html {
+      background-color: olive;
+      color: white;
+      overflow: hidden;
+    }
+  }*/
+
+
+@media all and (max-width: 600px) {
+    .container {
+        margin: auto;
+        background-color: #4b504e;
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        background-color: var(--media);
+        word-wrap: break-word;
+        text-align: center;
+        overflow: hidden;
+    }
+
+    .container {
+        float: left;
+        display: flex;
+        text-align: center;
+        margin: 0 0 auto -90px;
+    }
+
+    .logo-flex {
+        display: flex;
+        flex-direction: row;
+        margin: 30px 0.1rem auto;
+        position0: fixed;
+    }
+
+    svg {
+        width: 10.25rem;
+        color: var(--red);
+        fill: currentColor;
+        display: block;
+        margin-right: 18rem;
+        margin-left: 11.5rem;
+    }
+
+    .button1 {
+        margin-left: 7px;
+        padding: 8px 14px;
+        font-size: 1.4rem; 
+    }
+
+   .header {
+        width: 50%;
+        background-size: contain0;
+        text-align: center;
+        display: block;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-top: -81px;
+        margin-right: -5px;
+    }
+
+    .header h1 {
+        margin-top: 8rem;
+    }
+
+    h1 {
+        font-size: 3.4rem;
+        margin-top: 6rem;
+        font-weight: 700;
+        text-align: center;
+    }
+    
+    p {
+        font-size: 2.0rem;
+        font-weight: 200;
+    }
+
+    p.middle {
+        font-size: 2.0rem;
+        text-align: center;
+        margin: auto 14rem;
+    }
+
+    label {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .lowemail-flex0 {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #email {
+        margin: 1px auto 12px -172px;
+        padding: 16px 112px 16px 12px;
+        width0: 50%;
+    }
+
+    .button0 {
+        margin: 12px 9px 12px -4px;
+        padding: 0px 2px 7px;
+        font-size: 2.1rem;
+        width0: 50%;
+    }
+
+    /*.bar1, .bar2, .bar-flex {   !!! THE CODE HERE WAS COMMENTED OUT!!!
+        height: 200px;
+        margin: auto 25px;
+    }*/
+
+    .bar1 {
+        height: 200px;
+        width: 70%;
+        padding0: -80px 4px -80px 4px;
+        margin: 0 -9px 80px 90px;
+        border-radius: 11px;
+        background: #93938c;
+
+    }
+
+    .bar20 {
+        padding: -60px;
+        width: 100%;
+        margin: -2px 22px -4px;
+        height: 180px;
+    }
+
+    .bar-flex {
+        width: 100%;
+        height: 200px;
+        margin: -2px 10px 2px 40px;
+        padding0: 20px;
+        display: flex;
+        flex-direction: column;
+        float: right;
+        background: #9d9d8c;
+        text-align: center;
+    }
+
+   #popcorn {
+        width: 50px;
+        height: 65px;
+        margin-top: -23px;
+        margin-left: 0px;
+        margin-bottom: 64px;
+    }
+   
+    .bar-flex .middle {
+        margin-top: -100px;
+        margin-left: -100px;
+        white-space: nowrap;
+    }
+
+    .bar-flex .low {
+        margin-left: -130px;
+    }
+
+    .bar-flex .barpop {
+        text-align: center;
+    }
+
+    #low {
+        margin-left: -210px;
+    }
+
+    #advertsm:after {
+        content: "";
+        display: flex;
+        clear: both;
+    }
+
+    hr {
+        margin-top: -140px;
+        margin-bottom: 30px;
+    }
+
+    .adultA {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #adult h1 {
+        margin-left: -450px;
+    }
+
+    #adult p {
+        margin-left: 102px;
+        text-align: left;
+    }
+
+    .adultA img {
+        margin: 9px 200px 9px 170px;
+        width: 240px;
+    }
+
+    .teenager hr {
+        margin-top: 40px;
+    }
+
+    .teenagerA {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #teenager h1 {
+        margin-top: -21px;
+        margin-left: -1100px;
+    }
+
+    #teenager p {
+        max-width: 600px;
+        margin-left: -402px;
+        text-align: left;
+        overflow-wrap: break-word;
+    }
+
+    .teenagerA img {
+        margin-top: 80px;
+        margin-bottom: -29px;
+        width: 240px;
+        margin-left: 168px;
+    }
+
+    .childrenv hr {
+        margin-top: -140px;
+        margin-bottom: 30px;
+    }
+
+    .childrenA {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #children h1 {
+        margin-left: -2px;
+        margin-bottom: -2px;
+        flex-wrap: wrap;
+    }
+
+    #children p {
+        margin-left: 92px;
+        text-align: left;
+    }
+
+    .children img {
+        margin: 9px 120px 1px 170px;
+        width: 240px;
+    }
+
+    .game hr {
+        margin-top: 50px;
+    }
+
+    .gameA {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #game h1 {
+        margin-top: 141px;
+        margin-left: -600px;
+        flex-wrap: wrap;
+        max-width: 600px;
+        overflow-wrap: break-word;
+    }
+
+    #game p {
+        margin-left: -402px;
+        text-align: left;
+    }
+
+    .gameA img {
+        margin-top: 80px;
+        margin-bottom: -29px;
+        width: 240px;
+        margin-left: 168px;
+    }
+
+    .FAQ {
+        margin-top: -30px;
+    }
+    .FAQ h1 {
+        margin-left: -300px;
+        margin-right: 200px;
+        text-align: center;
+    }
+
+    .faqs {
+        margin: 0 0 0 -670px;
+        padding: 0 -75px 0 -98px;
+        text-align: left;
+    }
+
+    .dropdown .material-icons {
+        padding: 0 0 0 -8px;
+    }
+
+    .dropdown {
+        position: relative;
+        display: inline-block;
+        font-size: 3rem;
+        width: 50%;
+        margin: auto -24px auto 924px;
+        padding: 0 8px 0 -299px;
+      }
+
+      .dropdown p {
+        margin: 0 2px 1px -142px;
+        padding: 15px -233px 0 20px;
+        background-color: #3f3f3f;
+        opacity: 0.7;
+        height: 65px;
+        font-weight: normal;
+        cursor: pointer;
+        text-align: left;
+    }
+
+    .footer-flex {
+        float: left;
+        display: flex;
+    }
+}      
+
+  /*
+.dropdown {
+    position: relative;
+    display: inline-block;
+    font-size: 25px;
+    width: 96%;
+    margin: auto 2%;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: black;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin: auto 25px;
+  }
+  
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+.dropdown p {
+    margin: 0 12px 8px;
+    background-color: #3f3f3f;
+    opacity: 0.7;
+    height: 85px;
+    padding-top: 25px;
+    padding-left: 25px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.dropdown .material-icons {
+    margin-left: 990px;
+    margin-top: -49px;
+}
+
+.faq-mail .middle {
+    text-align: center;
+}
+
+
+    img {
+        margin: auto 5px;
+        display: block;
+        object-fit: cover;
+    }
+
+    .logo-flex {
+        display: flex;
+    }
+
+    .footer-flex {
+        width: 50%;
+        margin: auto 3px;
+    }
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+      width: 50%;
+    }
+  }*/

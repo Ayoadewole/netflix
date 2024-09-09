@@ -1,0 +1,836 @@
+* {
+    box-sizing: border-box;
+    margin: auto;
+}
+
+:root {
+    --red: rgb(229, 9, 20);
+    --grey: rgba(228, 199, 199, 0.7);
+    --blue: rgba(60, 60, 255, 0.7);
+    --white: #fff;
+    --black: rgb(0, 0, 0);
+    --media: rgba(20, 50, 250, 0.3);
+    --mintgreen: rgba(134, 255, 188, 0.8);
+    --offwhite: hsla(22, 60%, 68%, 0.6);
+}
+
+body {
+    background-color: var(--black);
+    color: var(--white);
+    margin: auto;
+    font-family: sans-serif;
+    overflow-x: hidden;
+}
+
+main, footer {
+    margin: auto 30px;
+}
+
+.header {
+    position: relative;
+}
+
+.header > img { 
+    width: 100%;
+    height: auto;
+    opacity: 0.9;
+    object-fit: cover;
+    object-position: 100% 30%;
+  }
+
+.subheader {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.logo-flex {  
+    margin: 1px -30px 190px -80px;
+    display: flex;
+}
+
+svg {
+    width: 10.25rem;
+    color: var(--red);
+    fill: currentColor;
+    display: block;
+    overflow: hidden;
+    margin-right: 50rem;
+}
+
+.button1 {
+    margin: auto 42px auto auto;
+    padding: 8px 12px 3px 10px;
+    font-size: 1.0rem;
+    border-radius: 5px;
+    background-color: var(--red);
+    transition-duration: 0.2s;
+    border: 1px solid var(--red);
+    text-decoration: none; 
+    color: var(--white);
+}
+
+
+
+
+.arts {
+    position: relative;
+    width: 96%;
+    background-color: aqua;
+    margin: 0 auto;
+    padding: auto;
+}
+.svg {
+    text-align: left;
+    width: 10.25rem;
+    color: var(--red);
+    fill: currentColor;
+    overflow: hidden;
+}
+.button2 {
+    padding: 8px;
+    font-size: 1.0rem;
+    border-radius: 5px;
+    background-color: var(--red);
+    transition-duration: 0.2s;
+    border: 1px solid var(--red);
+    text-decoration: none; 
+    color: var(--white);
+    margin-left: 27px;
+    align-self: center;
+}
+
+.arts .svg, .arts .button2 {
+    display: inline-block;
+}
+
+
+/*
+.button1 {
+    margin-right: -60px;
+    padding: 2px 12px 3px 10px;
+}
+*/
+
+.header h1 {
+    margin-bottom: 20px;
+}
+
+.header p {
+    margin-bottom: 18px;
+}
+
+h1 {
+    font-size: 3.1rem;
+    font-weight: 900;
+}
+
+hr {
+    border: 5px solid var(--grey);
+    margin: 60px -29px;
+    opacity: 0.3;
+}
+
+p {
+    font-size: 1.5rem;
+}
+
+label {
+    display: flex;
+    margin: -10px 300px 140px;
+    float: left;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+#email {
+    padding: 18px 160px 18px 16px;
+    background-color: var(--black);
+    margin: auto 130px 0 9px;
+    border-radius: 5px;
+    border: 1.5px solid grey;
+    font-size: 15px;
+    color: var(--white);
+    opacity: 0.6;
+}
+
+.button {
+    padding: -1px 30px;
+    background-color: var(--red);
+    margin: -1px auto 0 -125px;
+    border-radius: 5px;
+    border: 1px solid var(--red); 
+    font-size: 1.5rem;
+    color: var(--white);
+    cursor: pointer;
+    transition-duration: 0.2s;
+}
+
+/*.button {
+    padding: 11px 10px;
+    margin: auto 222px 45px 55px;
+}*/
+
+.button1:hover, .button:hover {
+    background-color: hsl(4, 85%, 40%);
+}
+
+.bar1 {
+    width: 100%;
+    height: 139px;
+    background-color: var(--white);
+    background: radial-gradient(51.39% 511.66% at 47.68% -217.91%, #ff9900 0%, #e50914 17.27%, #0e1b4f 79.44%, #000413 100%);
+    margin: 8px 0 auto;
+}
+
+.bar2 {
+    width: 80%;
+    height: inherit;
+    background-color: var(--grey);
+    background: radial-gradient(51.39% 511.66% at 47.68% -217.91%, #ff9900 0%, #e50914 17.27%, #0e1b4f 79.44%, #000413 100%);
+    box-shadow: 0px -8px 25px rgba(0, 0, 0, 0.5);  
+    margin: 0 auto 10px auto;
+} 
+
+.bar-flex {
+    width: 60%;
+    height: inherit;
+    background-color: var(--red);
+    background: linear-gradient(to right, hsla(0, 5%, 57%, 0.1) 0, #7c1dda00 60%, rgba(0, 0, 0, 0.1) 100%);
+    margin: -10px auto 20px auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.barpop {
+    line-height: 1.0rem;
+}
+
+#popcorn {
+    float: left;
+    margin: 30px 162px auto -220px;
+}
+
+p img:after {
+    content: "";
+    display: flex;
+    clear: both;
+}
+
+.bar-flex .middle {
+    font-size: 1.3rem;
+    margin-top: -90px;
+    margin-left: 183px;
+}
+
+.bar-flex p.low {
+    margin-bottom: 1px;
+    margin-left: 183px;
+    margin-top: -10px;
+    font-size: 1.0rem;
+}
+
+.bar-flex a.low {
+    color: blue;
+    margin-left: 183px;
+}
+
+.barpop > #icons {
+    margin-right: 60px;
+}
+
+.adultA, .childrenA {
+    margin: 50px 80px 70px 1px;
+    height: 400px;
+    display: flex;
+}
+
+#adult, #children {
+    margin-right: 150px;
+    text-align: left;
+  }
+  
+#adult p {
+    margin-right: -90px;
+}
+
+.rhs, .lhs {
+    width: 750px !important;
+}
+
+.teenagerA, .gameA {
+    margin: 50px 80px 70px 20px;
+    height: 400px;
+    display: flex;
+}
+
+#game {
+    margin-left: 150px;
+    margin-right: -50px;
+    text-align: left;
+}
+
+  #teenager {
+    margin-left: 61px;
+    margin-right: -75px;
+    text-align: left;
+    width: 650px !important;
+}
+
+#teenager p {
+    margin-right: 25px;
+}
+
+.FAQ {
+    margin: -10px -22px 9px;
+}
+
+.FAQ h1{
+    text-align: center;
+}
+
+.faqs {
+    margin-top: 20px;
+}
+
+.faq-mail {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.faq-mail label {
+    margin-top: 25px;
+    margin-bottom: -2px;
+}
+
+.dropContainer0 {
+    background-color: #46413a;
+}
+
+.item {
+    position: relative;
+    display: inline-block;
+    width: 96%;
+    margin: auto 2%;
+}
+
+.question {
+    margin: 0 2px 8px;
+    background-color: #3f3f3f;
+    height: 85px;
+    padding-top: 48px;
+    padding-left: 25px;
+    font-weight: normal;
+    cursor: pointer;
+    font-size: 23px;
+    line-height: 0;
+}
+
+.answer {
+    display: none;
+    position: absolute;
+    background-color: black;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin: auto 25px;
+}
+
+.question:hover + .answer {
+    display: block;
+}
+
+.que {
+    text-align: left;
+    width: 90%;
+}
+
+.ques {
+    text-align: right;
+    width: 10%;
+    font-size: 50px;
+}
+
+.item p {
+    display: inline-block;
+}
+
+.dropdown0 {
+    position: relative;
+    display: inline-block;
+    width: 96%;
+    margin: auto 2%;
+    background-color: aqua;
+}
+
+.visible0 {
+    margin: 0 2px 8px;
+    background-color: #3f3f3f;
+    height: 85px;
+    padding-top: 48px;
+    padding-left: 25px;
+    font-weight: normal;
+    cursor: pointer;
+    font-size: 23px;
+    line-height: 0;
+}
+
+.invisible0 {
+    display: none;
+    position: absolute;
+    background-color: black;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    margin: auto 25px;
+}
+  
+.visible:hover0 + .invisible {
+    display: block;
+}
+
+.visible  #icon0 {
+    font-size: 45px;
+    padding-left: 1050px;
+    line-height: 0;
+}
+
+/*
+
+https://codesandbox.io/s/htmlcssjs-umxsy?file=/index.html
+
+tolulope duyile
+2:23 PM
+https://codesandbox.io/s/htmlcssjs-umxsy?file=/index.html
+tolulope duyile
+2:38 PM
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>Sandbox</title>
+	<meta charset="UTF-8" />
+	<link rel="stylesheet" href="src/styles.css">
+</head>
+
+<body>
+	<div class="parent">
+		<div class="visible">Visible Content</div>
+		<div class="dropdown">Dropdown Content</div>
+	</div>
+</body>
+</html>
+body {
+  font-family: sans-serif;
+  background:#dedede;
+  padding:48px;
+}
+
+.parent {
+  width: 500px;
+  height: 50px;
+  position: relative;
+  border: 1px solid red;
+}
+
+.visible {
+  background: rgb(108, 85, 211);
+  width: 50%;
+  height: 50%;
+}
+
+.dropdown {
+  width: 100%;
+  height: 300px;
+  background: lightblue;
+  display: none;
+  position: absolute;
+  top: 30px;
+  left: 0px;
+}
+
+.visible:hover + .dropdown {
+  display: block;
+}
+xxp-snds-btf
+
+
+
+
+.dropdown .material-icons {
+    margin-left: 990px;
+    margin-top: -49px;
+}
+
+p i.material-icons {
+    font-size:50px;
+}*/
+
+footer {
+    color: var(--white);
+    opacity: 0.6;
+    margin-bottom: 60px;
+}
+
+footer p {
+    font-size: 1.0rem !important;
+}
+
+a:link, a:hover, a:visited  {
+    color: var(--white);
+}
+
+.footer-flex {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.footer-flex > div {
+    width: 20%;
+    height: 18px;
+    font-size: 0.9rem;
+    margin: 3px 0;
+    inline-size: none;
+}
+
+.clearfix {
+    margin-top: 22px;
+    margin-bottom: 22px;
+}
+
+footer .lower {
+    margin-top: 52px;
+    margin-bottom: 65px;
+}
+
+#lang {
+    margin: 1px auto 18px;
+    padding: 5px 22px;
+    border: 1px solid --white;
+    background-color: var(--black);
+    color: var(--white);
+    border-radius: 5px;
+    font-size: 1.0rem;
+    font-weight: 500;
+}
+
+::selection {
+    background: var(--blue);
+}
+
+@media screen and (max-width: 600px) {
+.container {
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    flex-direction: column;
+}
+
+.header > img { 
+    width: 50%;
+    opacity: 0.9;
+    object-fit: cover;
+    object-position: 30% 30%;
+}    
+
+.logo-flex { 
+    width: 100%;
+    margin: 1px auto 190px auto;
+}
+
+svg {
+    margin-right: 270px;
+    width: 8.25rem;
+}
+
+.button1 {
+    margin-right: 24px;
+}
+
+label {
+    width: 100%;
+    margin: auto 80px;
+    flex-direction: column;
+}
+
+#email {
+    margin: 15px;
+}
+
+.button {
+    margin: -1px auto 0 125px;
+}
+
+.bar1 {
+    height: 160px;
+    margin-top: 48px;
+}
+
+.bar-flex {
+    width: 100%;
+    flex-direction: column;
+}
+
+#popcorn {
+    float: left;
+    margin: -25px auto auto -165px;
+    width: 45px;
+    height: 60px;
+}
+
+p img:after {
+    content: "";
+    display: flex;
+    clear: both;
+}
+
+.bar-flex .middle {
+    font-size: 1.2rem;
+    margin-top: -1px;
+    margin-left: 50px;
+}
+
+.bar-flex p.low {
+    margin-bottom: 1px;
+    margin-left: 50px;
+    margin-top: -10px;
+    font-size: 1.0rem;
+}
+
+.bar-flex a.low {
+    color: blue;
+    margin-left: 50px;
+}
+
+h1 {
+    font-size: 2.1rem;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+.submain0 {
+    margin: auto 5px;
+}
+
+#adult, #children {
+    text-align: center;
+    margin: auto;
+}
+
+#adult h1, #children h1 {
+    text-align: center;
+    margin-left: 4px;
+    margin-bottom: 12px;
+}
+
+#adult p, #children p {
+    text-align: center;
+    margin: auto ;
+}
+
+.teenagerA, .gameA {
+    width: 100%;
+    flex-direction: column-reverse;
+}
+
+#teenager {
+    text-align: center;
+    margin: auto;
+}
+
+#teenager h1 {
+    text-align: center;
+    margin-left: -220px;
+    margin-bottom: 12px;
+}
+
+#teenager p {
+    text-align: center;
+    margin: auto 200px auto -20px ;
+}
+
+#teenager {
+    text-align: center;
+    margin: auto;
+}
+
+#game {
+    text-align: center;
+    margin: auto;
+}
+
+#game h1 {
+    text-align: center;
+    margin-left: -24px;
+    margin-bottom: 12px;
+}
+
+#game p {
+    text-align: center;
+    margin: auto ;
+}
+
+.adultA, .childrenA {
+    width: 100%;
+    flex-direction: column;
+}
+
+.rhs, .lhs, .lhss {
+    width: 450px !important;
+}
+
+.answer p {
+    margin: 0 2px 8px;
+    height: 85px;
+    text-align: left;
+    font-size: 18px;
+    width: 100%;
+}
+
+.ques {
+    font-size: 35px;
+}
+
+.dropdown p0 {
+    margin: 0 2px 8px;
+    height: 85px;
+    text-align: left;
+    font-size: 18px;
+    width: 100%;
+}
+
+.visible  #icon0 {
+    font-size: 35px;
+    padding-left: 450px;
+    line-height: 0;
+    width: 100%;
+}
+
+.footer-flex > div {
+    width: 50%;
+    font-size: 15px;
+}      
+
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        width: 100%;
+        text-align: center;
+        overflow: hidden;
+        flex-direction: column;
+    }
+
+    .header000000 {
+        height: 150px;
+    }
+    
+    .header > img { 
+        width: 50%;
+        opacity: 0.9;
+        object-fit: cover;
+        object-position: 30% 30%;
+    }    
+     
+    .logo-flex { 
+        width: 100%;
+        margin: 1px -30px 180px -80px;
+        display: flex;
+    }
+    
+    .button1 {
+        margin: auto -56px auto auto;
+    }
+
+    svg {
+        margin-right: 37rem;
+        width: 8.25rem;
+    }
+
+    label {
+        margin: -1px 190px 60px;
+    }
+
+    .bar1 {
+        margin-top: 29px;
+    }
+
+    .bar-flex .middle, .bar-flex p.low, .bar-flex a.low {
+        margin-left: 130px;
+    }
+    
+    .submain0 {
+        margin: auto 5px;
+    }
+    
+    #adult, #children {
+        text-align: left;
+        margin: 25px auto auto;
+    }
+    
+    #adult h1, #children h1 {
+        text-align: left;
+        margin-left: 4px;
+        margin-bottom: 12px;
+    }
+    
+    #adult p, #children p {
+        text-align: left;
+        margin: auto ;
+    }
+    
+    .adultA, .childrenA, .teenagerA, .gameA {
+        width: 100%;
+    }
+    
+    #teenager {
+        margin: 25px auto -25px;
+    }
+    
+    #teenager h1 {
+        margin-left: -220px;
+        margin-bottom: 12px;
+    }
+    
+    #teenager p {
+        margin: auto 200px auto -20px ;
+    }
+    
+    #game {
+        margin: 25px auto -25px;
+    }
+    
+    #game h1 {
+        margin-left: -24px;
+        margin-bottom: 12px;
+    }
+    
+    #game p {
+        margin: auto ;
+    }
+    
+    .rhs, .lhs, .lhss {
+        width: 450px !important;
+    }
+    
+    .footer-flex > div {
+        width: 50%;
+        font-size: 15px;
+    } 
+    
+    .faq-mail label {
+        margin-top: 25px;
+        margin-bottom: -2px;
+    }
+
+    .adultA, .childrenA, .teenagerA, .gameA {
+        height: 250px;    
+    } 
+
+}
